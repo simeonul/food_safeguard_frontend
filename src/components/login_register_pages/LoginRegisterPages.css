@@ -1,0 +1,156 @@
+.register-page-container {
+    overflow: hidden;
+    height: calc(100vh - 70px);
+}
+
+.register-columns {
+    display: flex;
+    height: 100%;
+}
+
+.form-column {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em 2em 2%;
+}
+
+.register-title {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.08rem;
+}
+
+.registration-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 60%;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.login-fields {
+    display: flex;
+    flex-direction: column;
+    min-height: 30%;
+    justify-content: space-evenly;
+}
+
+.error-input {
+    width: 100%;
+}
+
+.error {
+    min-height: 2em;
+    font-size: 1.1em;
+    letter-spacing: -0.05rem;
+    font-weight: 600;
+    position: relative;
+    color: #CE6464;
+}
+
+.error span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.error-input input {
+    width: 90%;
+    min-height: 1.5em;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: -0.04rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+.bttns-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.or-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #878787;
+}
+
+.or-text:before, .or-text:after {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background: #878787;
+    margin: 0 10px;
+}
+
+.image-column {
+    width: 65%;
+    background-image: url("../../images/scan_background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.create-acc-bttn {
+    width: 100%;
+    max-width: 180px;
+    cursor: pointer;
+}
+
+.go-to-login {
+    letter-spacing: -0.05rem;
+    font-weight: 600;
+    color: #878787;
+}
+
+
+@media screen and (max-width: 720px) {
+    .form-column {
+        width: 100%;
+    }
+
+    .image-column {
+        display: none;
+    }
+
+    .form-column {
+        padding-bottom: 20%;
+    }
+
+    .register-title {
+        font-size: 2.5rem;
+    }
+
+    .error-input input {
+        font-size: 1.5rem;
+    }
+
+    .error {
+        min-height: 2.2em;
+        font-size: 1.3em;
+    }
+
+    .create-acc-bttn {
+        max-width: 240px;
+    }
+
+    .or-text {
+        font-size: 1.3rem;
+    }
+
+    .go-to-login {
+        font-size: 1.3rem;
+    }
+}
+

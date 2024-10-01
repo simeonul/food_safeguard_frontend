@@ -1,0 +1,14 @@
+.ingredients-slider-section {
+    width: 80%;
+    height: fit-content;
+    background-color: white;
+}
+
+.slider-title {
+    font-size: calc(0.6vw + 1em);
+    margin: 0 0 0.5em;
+}
+
+.ingredients-slider-container {
+    margin-bottom: 0.7em;
+}

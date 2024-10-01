@@ -1,0 +1,168 @@
+.preferences-container {
+    min-height: 100%;
+    background-image: url("../../images/geometric_background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    font-weight: 600;
+    letter-spacing: -0.08rem;
+}
+
+.sections-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5em 0;
+
+}
+
+.allergens {
+    width: 100%;
+}
+
+.allergens-section {
+    width: 45%;
+    height: fit-content;
+    border-radius: 30px;
+    border: 7px solid #157023;
+    background-color: white;
+}
+
+.allergen-item {
+    padding: 0.4em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto 1em;
+    border-radius: 40px;
+    border: 4px solid black;
+    font-size: calc(0.5vw + 1em);
+    box-shadow: 10px 10px 3px #BFBFBF;
+}
+
+.allergen-item input {
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 1.7em;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: -0.08rem;
+}
+
+.remove-allergen-bttn {
+    cursor: pointer;
+    max-width: 35px;
+}
+
+.suggestions-list {
+    margin: 0em 2em 1em;
+    width: 90%;
+    background-color: white;
+    z-index: 100;
+    overflow-y: auto;
+    max-height: 10em;
+}
+
+.suggestion-item {
+    font-size: 1.2rem;
+    margin: 0.4em 0.3em;
+    border-bottom: 1px solid black;
+    border-radius: 3px;
+}
+
+.suggestion-item:hover {
+    background-color: #BFBFBF;
+}
+
+.restrictions-section {
+    width: 30%;
+    height: fit-content;
+    border-radius: 30px;
+    border: 7px solid #157023;
+    background-color: white;
+}
+
+.preferences-titles {
+    margin: 1em 0;
+    text-align: center;
+    font-size: calc(0.8vw + 1em);
+}
+
+.slider-container {
+    width: 80%;
+    margin: auto;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    background: black;
+    border-radius: 15px;
+    outline: none;
+}
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background: #157023;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background: #157023;
+    cursor: pointer;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: black;
+    font-size: calc(0.5vw + 1em);
+}
+
+.submit-restriction {
+    border: 4px solid black;
+    border-radius: 15px;
+    font-size: calc(0.8vw + 1em);
+    margin: 0.5em 0;
+    padding: 0.1em 0;
+    text-align: center;
+    box-shadow: 5px 5px 3px #BFBFBF;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 720px){
+    .sections-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .allergens-section {
+        margin-top: 1em;
+        order: 1;
+        width: 90%;
+    }
+
+    .restrictions-section {
+        order: -1;
+        width: 90%;
+    }
+}

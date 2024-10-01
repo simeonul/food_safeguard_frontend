@@ -1,0 +1,81 @@
+.home-page-container {
+    overflow: hidden;
+    background-image: url("../../images/background.png");
+    height: calc(100vh - 70px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-page-text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0em 2em;
+}
+
+.big-text{
+    width: 85%;
+    margin: 0.5em 0em;
+    font-size: calc(5vw + 1em);
+    color: white;
+}
+
+.small-text-columns{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6em;
+}
+
+.small-text{
+    color: white;
+    margin: 0;
+    width: 55%;
+    font-size: calc(1.2vw + 1em);
+}
+
+.start-icon {
+    width: 30%;
+    margin-right: 3em;
+}
+
+.start {
+    float: right;
+    max-width: 200px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 720px){
+    .big-text{
+        width: 100%;
+        font-size: 4em;
+    }
+
+    .small-text-columns{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .small-text{
+        width: 100%;
+        font-size: 1.3em;
+    }
+
+    .start-icon {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .start {
+        margin-top: 2em;
+        max-width: 300px;
+    }
+}
+

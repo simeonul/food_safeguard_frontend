@@ -1,0 +1,134 @@
+.add-product-container {
+    min-height: 100%;
+    background-image: url("../../images/geometric_background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    font-weight: 600;
+    letter-spacing: -0.08rem;
+    padding: 1em 1em;
+    justify-content: space-evenly;
+}
+
+.addition-fields-section {
+    width: 45%;
+    height: fit-content;
+    border-radius: 30px;
+    border: 7px solid #157023;
+    background-color: white;
+}
+
+.add-ingredients-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-product-title {
+    margin: 0.5em 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.add-product-input{
+    width: 85%;
+    min-height: 1.7em;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: -0.04rem;
+    margin-bottom: 1em;
+}
+
+.ingredients-label {
+    margin: 1em 0 0.5em;
+    font-size: 1.4rem;
+    text-align: left;
+    width: 80%;
+}
+
+.add-product-error {
+    font-size: 1.4rem;
+    width: 80%;
+    text-align: right;
+    color: #CE6464;
+}
+
+.search-product-error {
+    margin-top: 0.5em;
+    font-size: 1.3rem;
+    width: 90%;
+    text-align: right;
+}
+
+.submit-product-button {
+    font-size: 1.8rem;
+    margin: 0.2em 0;
+    padding: 0.1em 0;
+    text-align: center;
+    cursor: pointer;
+    width: 60%;
+    color: #157023;
+}
+
+.product-search-container {
+    width: 35%;
+    height: fit-content;
+    border-radius: 30px;
+    border: 7px solid #157023;
+    background-color: white;
+    padding: 0.5em 0 0;
+}
+
+.product-search-title {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.scan-for-barcode {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.product-search-fields {
+    padding: 1em 0;
+    width: 80%;
+    margin: auto;
+}
+
+.search-product-button {
+    font-size: 1.4rem;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 720px){
+    .add-product-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .addition-fields-section {
+        margin-top: 1em;
+        width: 95%;
+    }
+
+    .add-product-title {
+        font-size: 1.6rem;
+    }
+
+    .submit-product-button {
+        font-size: 1.6rem;
+    }
+
+    .product-search-container {
+        width: 95%;
+    }
+}
